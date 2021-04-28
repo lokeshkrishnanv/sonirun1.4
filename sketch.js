@@ -182,7 +182,7 @@ function draw() {
       rings = rings + 1;
     }
    
-    if(rings === 1){
+    if(rings === 25){
         sonic.changeAnimation("sonic_high",sonic_high);
         sonic.scale = 0.03;
         rings = 0;
