@@ -177,15 +177,15 @@ function draw() {
       sonic.velocityY = 0;
     }
        
-       if(keyWentDown("W")){
-      sonic.velocityY = -5;
-   }else if(keyWentUp("W")){
-      sonic.velocityY = 0;
+       if(keyWentDown("left")){
+      sonic.velocityX = -5;
+   }else if(keyWentUp("left")){
+      sonic.velocityX = 0;
  }
-    if(keyWentDown("S")){
-      sonic.velocityY = 5;
-    }else if(keyWentUp("S")){
-      sonic.velocityY = 0;
+    if(keyWentDown("right")){
+      sonic.velocityX = 5;
+    }else if(keyWentUp("right")){
+      sonic.velocityX = 0;
     }
 
     if(sonic.isTouching(ringGroup)){
