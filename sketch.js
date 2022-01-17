@@ -164,7 +164,17 @@ function draw() {
         back.changeAnimation("back_image1",back_image1);
         back.scale = 1;
     }
-
+       
+   if(keyWentDown("left")){
+      sonic.velocityX = -5;
+   }else if(keyWentUp("left")){
+      sonic.velocityX = 0;
+ }
+    if(keyWentDown("right")){
+      sonic.velocityX = 5;
+    }else if(keyWentUp("right")){
+      sonic.velocityX = 0;
+    }
 
    if(keyWentDown("up")){
       sonic.velocityY = -5;
@@ -177,16 +187,7 @@ function draw() {
       sonic.velocityY = 0;
     }
        
-       if(keyWentDown("left")){
-      sonic.velocityX = -5;
-   }else if(keyWentUp("left")){
-      sonic.velocityX = 0;
- }
-    if(keyWentDown("right")){
-      sonic.velocityX = 5;
-    }else if(keyWentUp("right")){
-      sonic.velocityX = 0;
-    }
+
 
     if(sonic.isTouching(ringGroup)){
       ringGroup.destroyEach();  
