@@ -176,6 +176,17 @@ function draw() {
     }else if(keyWentUp("down")){
       sonic.velocityY = 0;
     }
+       
+       if(keyWentDown(W)){
+      sonic.velocityY = -5;
+   }else if(keyWentUp(W)){
+      sonic.velocityY = 0;
+ }
+    if(keyWentDown(S)){
+      sonic.velocityY = 5;
+    }else if(keyWentUp(S)){
+      sonic.velocityY = 0;
+    }
 
     if(sonic.isTouching(ringGroup)){
       ringGroup.destroyEach();  
