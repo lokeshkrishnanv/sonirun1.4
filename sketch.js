@@ -186,11 +186,11 @@ function draw() {
         sonic.changeAnimation("sonic_high",sonic_high);
         sonic.scale = 0.03;
         rings = 0;
-
+    }
+       
         if(EnemyGroup.isTouching(sonic)){
             sonic.changeAnimation("sonic_run",sonic_run);
         }
-    }
 
     if(emeralds_collected === 7){
         sonic.changeAnimation("sonic_high",sonic_high);
