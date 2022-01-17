@@ -177,14 +177,14 @@ function draw() {
       sonic.velocityY = 0;
     }
        
-       if(keyWentDown("w")){
+       if(keyWentDown("W")){
       sonic.velocityY = -5;
-   }else if(keyWentUp("w")){
+   }else if(keyWentUp("W")){
       sonic.velocityY = 0;
  }
-    if(keyWentDown("s")){
+    if(keyWentDown("S")){
       sonic.velocityY = 5;
-    }else if(keyWentUp("s")){
+    }else if(keyWentUp("S")){
       sonic.velocityY = 0;
     }
 
